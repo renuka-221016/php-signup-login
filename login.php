@@ -1,15 +1,20 @@
 <?php
 include "db.php";
 
-$email = $_POST['email'];
+$username = $_POST['username'];
 $password = $_POST['password'];
-
-$query = "SELECT * FROM users WHERE email='$email' AND password='$password'";
+$username=strtolower($username);
+if (strlen($username)==0){
+    die("username required");
+}
+else{
+$query = "SELECT * FROM users WHERE username='$username' AND password='$password'";
 $result = mysqli_query($conn, $query);
 
 if (mysqli_num_rows($result) == 1) {
-    echo "Login Successful ";
+    header("Location:index.html");
 } else {
-    echo "Invalid Email or Password ";
+    print "$username is invalid";
+}
 }
 ?>
