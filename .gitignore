@@ -2,6 +2,7 @@ vendor/
 config.php
 .env
 github_auth.php
+firebase_login.html
 /*const firebaseConfig = {
   apiKey: "AIzaSyBvIQfWQFNT7ZxJMNGe2aijQTEGHd7LuCo",
   authDomain: "myproject-1-6d3e9.firebaseapp.com",
