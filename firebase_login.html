@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Firebase Login</title>
+</head>
+
+<body>
+
+<h2>Firebase Google Login</h2>
+
+<button onclick="googleLogin()">
+Login with Google
+</button>
+
+<p id="user"></p>
+
+<script type="module">
+
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { getAuth, GoogleAuthProvider, signInWithPopup }
+from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+
+const firebaseConfig = {
+apiKey: "AIzaSyBvIQfWQFNT7ZxJMNGe2aijQTEGHd7LuCo",
+  authDomain: "myproject-1-6d3e9.firebaseapp.com",
+  projectId: "myproject-1-6d3e9",
+    appId: "1:458234190480:web:96f761f4eda2fd5f645615"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth();
+
+window.googleLogin = function() {
+
+    const provider = new GoogleAuthProvider();
+
+    signInWithPopup(auth, provider)
+    .then((result)=>{
+        document.getElementById("user").innerHTML =
+        "Welcome " + result.user.displayName;
+    })
+    .catch((error)=>{
+        console.log(error);
+    });
+}
+
+</script>
+
+</body>
+</html>
