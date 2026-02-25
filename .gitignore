@@ -2,6 +2,7 @@ vendor/
 config.php
 .env
 github_auth.php
+firebase_login.html
 /*const firebaseConfig = {
   apiKey: "AIzaSyBvIQfWQFNT7ZxJMNGe2aijQTEGHd7LuCo",
   authDomain: "myproject-1-6d3e9.firebaseapp.com",
@@ -10,5 +11,8 @@ github_auth.php
   messagingSenderId: "458234190480",
   appId: "1:458234190480:web:96f761f4eda2fd5f645615"
 };*/
+<<<<<<< HEAD
 vendor/
 .env
+=======
+>>>>>>> 313508892b4785464909dcaaf5e03a1cd8ce8496
