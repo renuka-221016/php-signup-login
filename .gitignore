@@ -10,3 +10,5 @@ github_auth.php
   messagingSenderId: "458234190480",
   appId: "1:458234190480:web:96f761f4eda2fd5f645615"
 };*/
+vendor/
+.env
