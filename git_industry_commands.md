@@ -23,3 +23,13 @@ Purpose:Clones a specific branch instead of the default branch
 used when we only a feature branch,
 working on a specific development branch
 avoid downloading unnecessary branches
+
+
+
+Syntax: git clone --depth <number><repository-url>
+Purpose:Creates a shallow clone
+It downloads limited commit history
+makes cloning faster
+reduces storage usage..
+used in large projects,CI/CD pipelines
+When full history is not required
