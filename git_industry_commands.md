@@ -1,10 +1,12 @@
 1.Git Configuration Commands
 Syntax:git config --global user.name
+git config --global user.name "renuka"
 Purpose:This command sets your Git username globally on your system.
 It will be used in all repositories to identify who made the commits.git config
 
 
 Syntax:git config --global user.email
+git config --global user.email "abc@gmail.com"
 Purpose:This sets your email address for all commits Github uses this email too link your commits to your git hub account
 
 Syntax:git config --list
